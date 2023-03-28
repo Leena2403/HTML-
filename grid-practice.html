@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid Challenge</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 3px;
+            grid-auto-rows: minmax(200px, auto);
+            grid-auto-columns: 5px;
+            row-gap: 10px;
+        }
+
+        .box {
+            background-color: rgba(181, 138, 69, 0.534);
+            border: 3px solid rgba(255, 105, 180, 0.603);
+            border-radius: 3px;
+        }
+
+        /* #box1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+        }
+
+        #box4 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 4;
+            grid-column-end: 5;
+
+        }
+
+        #box6 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 6;
+            grid-column-end: 7;
+
+        } */
+
+        #box8 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+        }
+
+        /* #box2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        } */
+
+        #box10 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        #box9 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        #box0{
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+        }
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .nested-item{
+            margin: 0 130px;
+            border: 3px solid black; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box item-1-container" id="box0">
+            <div class="nested-item">dabbe me dabba 1</div>
+            <div class="nested-item">dabbe me dabba 2</div>
+            <div class="nested-item">dabbe me dabba 3</div>
+        </div>
+        <div class="box" id="box1">Dabba 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores magnam
+            saepe corporis amet veniam quibusdam, minima modi odio quae similique sapiente laboriosam commodi ullam
+            corrupti quod! Aliquam incidunt deserunt earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div class="box" id="box2">Dabba 3</div>
+        <div class="box" id="box4">Dabba 4</div>
+        <div class="box">Dabba 5</div>
+        <div class="box" id="box6">Dabba 6</div>
+        <div class="box">Dabba 7</div>
+        <div class="box" id="box8">Dabba 8</div>
+        <div class="box" id="box9">Dabba 9</div>
+        <div class="box" id="box10">Dabba 10</div>
+        <div class="box" id="box11">Dabba 11</div>
+
+    </div>
+</body>
+
+</html>

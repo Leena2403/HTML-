@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+        }
+        ul{
+            background-color: grey;
+        }
+
+        li {
+            /* display: inline; */
+            list-style: square inside;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 70px;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .container {
+            width: 50vw;
+            height: 500vh;
+            background-color: rgba(255, 0, 0, 0.787);
+            /* min-height: 50vh; */
+            /* max-height: 100vh; */
+            margin: auto;
+            padding: 40px;
+            position: relative;
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255, 255, 0, 0.726);
+            /* position: relative; */
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgba(21, 127, 214, 0.838);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quisquam quod architecto, voluptatum unde nisi
+            modi neque nesciunt eligendi </p>
+        <div class="box">
+            I am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione neque nobis?
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Apple</li>
+        <li>Apple</li>
+    </ul>
+</body>
+
+</html>

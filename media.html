@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body {
+            background-color: rgb(112, 162, 120);
+        }
+
+        .container {
+            background-color: rgb(123, 89, 215);
+            height: 40vh;
+            font-size: 20px;
+
+        }
+
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: hotpink;
+            }
+
+            .container {
+                background-color: yellow;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: rgb(82, 217, 222);
+            }
+
+            .container {
+                background-color: rgba(224, 145, 66, 0.82);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nobis doloribus cupiditate earum fugiat dolore
+        minima iure at voluptas maiores, enim nostrum aut est cumque veritatis dicta ullam adipisci culpa? Consectetur
+        voluptates error quo?
+    </div>
+</body>
+
+</html>

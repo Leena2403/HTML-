@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af0d90bab1.js" crossorigin="anonymous"></script></script>
+
+</head>
+<body>
+  <div class="container">
+
+    <form action="" method="get">
+        <h1 class="main_heading"> Payment Form</h1>
+        <hr>
+        <p>Required fields are followed by *</p>
+        <h2 class="heading">Contact Information</h2>
+
+  <div class="half">
+        <label for="name">Name *</label> 
+        <input type="text" class="ex1" name="name" id="name" required placeholder="Leena Goyal">
+  </div>
+  <br>
+    
+  <div class="half">
+     <fieldset>
+            <legend> Gender *</legend>
+                <label for="male"> Male<input type="radio" name="gender" id="male" required> </label>
+               <label for="female"> Female <input type="radio" name="gender" id="female" required> </label>
+    </fieldset> 
+   </div>
+        
+<br>
+    <div class="address">
+        <label for="address"> Address <textarea name="address" class="ex1" id="address" cols="150" rows="10" placeholder="Type here"></textarea> </label>
+    </div>
+<br>
+
+    <div class="half">
+        <label for="email"> Email *<input type="email" class="ex1" name="name" id="email" required placeholder="abcd@gmail.com"> </label>
+    </div>
+    <br>
+    <div class="half">
+        <label for="pincode"> Pincode *<input type="number" class="ex1" name="pincode" id="pincode" required placeholder="110059"> </label>
+    </div>
+    
+        <h2 class="heading"> Payment Information</h2>
+
+       
+            <p> Accepted Cards </p> 
+            <div class="img">
+            <i class="fa-brands fa-cc-visa fa-2xl" ></i>
+            <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+            <i class="fa-brands fa-cc-amex fa-2xl"></i>
+        </div>
+
+        
+    <div class="full">
+        <label for="card_type"> Card Type: *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </label>
+    </div>
+    <br>
+
+    <div class="half">
+        <label for="card_numebr"> Card Number *<input type="number" class="ex1" name="cnumber" id="cnumber" required placeholder="1234-1234-1234-1234"> </label>
+        <br>
+        <br>
+        <label for="exp"> Card Expiration Date *<input type="date" class="ex1" name="exp_date" id="exp_date" required> </label>
+        <br>
+        <br>
+        <label for="CVV"> CVV *<input type="password" name="cvv" class="ex1" id="cvv" required placeholder="123"> </label>
+    </div>
+    <br>
+        
+       <div class ="pay"> 
+    <input type="submit" value="Pay Now">
+       </div>
+
+</form>
+
+</body>
+</div>
+</html>

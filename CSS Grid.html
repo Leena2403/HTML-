@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+            /* grid-gap: 2rem; */
+            /* grid-template-rows: 1fr 1fr 4fr;
+            grid-template-columns: repeat(auto-fill, 200px);
+            grid-auto-rows: 2fr;  default */
+            /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+            /* grid-template-rows: repeat(4, 1fr); */
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'aside aside aside section '
+                'footer footer footer footer';
+        }
+
+        .item {
+            /* background-color: rgb(205, 149, 116); */
+            border: 2px solid rgb(96, 7, 7);
+            padding: 10px;
+            /* height: 100px; */
+            /*width: 100px; */
+        }
+
+        .box:first-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column: 1 / span 2;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            Home About Contact Us
+        </nav>
+        <section>
+            <h2>Learn CSS in Hindi</h2>
+        </section>
+        <aside>
+            <h1>More About Us</h1>
+        </aside>
+        <footer>
+            Copyright 2020
+        </footer>
+
+
+        <!-- <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, vero necessitatibus? Placeat.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi magnam commodi!
+        </div>
+        <div id="footer" class="item">
+            Lorem, ipsum dolor.
+        </div> -->
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+
+</html>

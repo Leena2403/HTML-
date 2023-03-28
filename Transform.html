@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 455px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* transform: translate(10px, 6px); */
+            /* transform-origin: 0; */
+            /* transform: skew(100deg 10deg); */
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            /* transition-property: width; */
+            /* transition-duration: 0.5s; */
+            /* transition-timing-function: ease-in; */
+            transition: width 1s ease-in-out, height 1s ease-in;
+        }
+
+        img:hover{
+            width: 450px;
+            height: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"> <img
+                src="https://images.unsplash.com/photo-1661732017109-c55776a797f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=180&q=120"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>

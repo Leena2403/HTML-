@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: seagreen;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transform: rotate(45deg);
+            /* animation: box-rotate 8s ease-in infinite forwards; */
+        }
+        .box-text{
+            transform: rotate(-44deg);
+            font-size: 28px;
+        }
+        .box:hover{
+            /* animation: box-rotate 5s ease-in infinite forwards; */
+
+        }
+        @keyframes box-rotate {
+            0%{
+                transform: rotate(45deg);
+                background-color: rgb(212, 51, 51);
+            }
+            20%{
+                transform: rotate(-45deg);
+                background-color: rgb(191, 218, 57);
+            }
+            40%{
+                transform: rotate(-90deg);
+                background-color: rgb(235, 140, 24);
+            }
+            60%{
+                transform: rotate(-135deg);
+                background-color: hotpink;
+            }
+            /* 80%{
+                transform: rotate(45deg);
+                background-color:rgb(159, 47, 228); ;
+            } */
+            100%{
+                transform: rotate(-180deg);
+                background-color: rgb(44, 191, 228);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> <p class="box-text"> This is a diamond</p></div>
+    </div>
+</body>
+</html>
